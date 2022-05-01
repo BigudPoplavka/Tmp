@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Lab1DiZa</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="my_name_info">Диана Зайка ~ ИВТ-1</string>
+    <string name="show_name">Отобразить / скрыть</string>
+</resources>
