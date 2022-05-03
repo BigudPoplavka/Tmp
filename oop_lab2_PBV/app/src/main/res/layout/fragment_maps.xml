@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button4"
+            android:layout_width="83dp"
+            android:layout_height="49dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/tab_bar_item__2_"
+            android:text=" "
+            map:layout_constraintBottom_toBottomOf="parent"
+            map:layout_constraintEnd_toStartOf="@+id/button5"
+            map:layout_constraintHorizontal_bias="1.0"
+            map:layout_constraintStart_toEndOf="@+id/button3"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button2"
+            android:layout_width="78dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/tab_bar_item"
+            android:text=" "
+            map:layout_constraintBottom_toBottomOf="parent"
+            map:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button6"
+            android:layout_width="84dp"
+            android:layout_height="49dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/tab_bar_item__4_"
+            android:text=" "
+            map:layout_constraintBottom_toBottomOf="parent"
+            map:layout_constraintEnd_toEndOf="parent"
+            map:layout_constraintHorizontal_bias="0.0"
+            map:layout_constraintStart_toEndOf="@+id/button5"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button5"
+            android:layout_width="83dp"
+            android:layout_height="49dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/tab_bar_item__3_"
+            android:text=" "
+            map:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="242dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button3"
+            android:layout_width="77dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/tab_bar_item__1_"
+            android:text=" "
+            map:layout_constraintBottom_toBottomOf="parent"
+            map:layout_constraintStart_toEndOf="@+id/button2"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/map_title"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            map:layout_constraintEnd_toEndOf="parent"
+            map:layout_constraintHorizontal_bias="0.498"
+            map:layout_constraintStart_toStartOf="parent"
+            map:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="11dp"
+            android:layout_height="19dp"
+            android:layout_marginStart="13dp"
+            android:rotation="90"
+            android:src="@drawable/vector"
+            map:layout_constraintBottom_toBottomOf="@+id/textView7"
+            map:layout_constraintStart_toStartOf="parent"
+            map:layout_constraintTop_toTopOf="@+id/textView7" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="598dp"
+        android:layout_gravity="center_vertical"
+        tools:context=".MapsActivity"></fragment>
+
+
+</FrameLayout>

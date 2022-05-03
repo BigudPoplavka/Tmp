@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">oop_lab2_PBV</string>
+    <string name="welcome">Добро пожаловать</string>
+    <string name="login_to_tontinue">Войдите в аккаунт, чтобы продолжить</string>
+    <string name="agree">Согласен с</string>
+    <string name="agree_with">Условиями соглашения</string>
+    <string name="phone_code_rus">+7</string>
+    <string name="phone_number">Номер телефона</string>
+    <string name="map_title">Карта</string>
+</resources>
